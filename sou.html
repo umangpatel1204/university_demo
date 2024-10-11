@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     
+  </head>
+   <style type="text/css">
+    h1 {
+      text-transform: uppercase;
+      font-weight: 900;
+      margin: 0 0 1rem;
+      padding: 0;
+      line-height: 1;
+      font-family: Futura, Helvetica, sans-serif;
+      font-size: 5vw;
+      @media (max-width: 400px) 
+        font-size: 22px;
+      
+      @media (min-width: 1200px) 
+        font-size: 75px;
+      
+    } 
+    .support {
+      position: fixed;
+      bottom: 60px;
+      right: 20px;
+      text-transform: uppercase;
+      font-size: 9px;
+      letter-spacing: 1px;
+      text-align: right;
+      position: relative;
+      z-index: 10;
+    }
+    #img1{
+      height: 90%;
+      width: 90%;
+      opacity: 70%;
+    }
+    .images:hover{
+      transform: rotateY(180deg);
+      transition: 5s;
+    }
+    .videobg{
+      position: fixed;
+      z-index: -1;
+      opacity: 1;
+      width: 100%;  
+    }
+    .paragraph{
+      text-align: center;
+      width: 90%;
+    }  
+    .dropdown-menu
+    {
+      background-color: lightcoral;
+    }
+</style>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="position: sticky;top:0;">
+        
+        <img src="https://silveroakuni.ac.in/upload/images/250x70.png" alt="logo" height="50px" width="200px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="https://silveroakuni.ac.in/"><i class="fa-solid fa-house"></i>Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://goo.gl/maps/eneWnU3iJc1JpC1X7"><i class="fa-solid fa-location-dot"></i>Location</a>
+              </li>
+              
+                  <!-- <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </button> 
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://silveroakuni.ac.in/about"><i class="fa-solid fa-address-card"></i>About</a></li>
+                    <li><a class="dropdown-item" href="https://silveroakuni.ac.in/gallery"><i class="fa-solid fa-camera"></i>Gallery</a></li>
+                    <li><a class="dropdown-item" href="https://silveroakuni.ac.in/past-events"><i class="fa-solid fa-calendar-check"></i>event</a></li>
+                  </ul> -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About Us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="https://silveroakuni.ac.in/about"><i class="fa-solid fa-address-card"></i>About</a></li>
+                      <li><a class="dropdown-item" href="https://silveroakuni.ac.in/gallery"><i class="fa-solid fa-camera"></i>Gallery</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://silveroakuni.ac.in/past-events"><i class="fa-solid fa-calendar-check"></i>event</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link enabled" href="https://www.facebook.com/SilverOakUni/"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button style="color: white;" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            
+          </div>
+      </nav>
+     
+        <video src="X2Download.com-Life At Silver Oak University.mp4" autoplay loop playsinline muted class="videobg"></video>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  clik here for Registration
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">INFORMATION</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" a href="C:/Users/student/Desktop/bootsraps%20today.html"></a>
+         Registration Form
+         <!-- <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4" id="CNAForm"> -->
+              <h3 class="text-center"><i class="fa fa-users"></i> Create New Account<hr/></h3>
+              <div class="form-group">
+                <b>Firstname:</b>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  <input id="TxtFirstname" type="text" maxlength="20" placeholder="Enter firstname here.." class="form-control" />
+                </div>
+                <small id="TxtFirstnameValidate" class="text-danger"></small>
+              </div>
+              <div class="form-group">
+                <b>Lastname:</b>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  <input id="TxtLastname" type="text" maxlength="20" placeholder="Enter lastname here.." class="form-control" />
+                </div>
+                <small id="TxtLastnameValidate" class="text-danger"></small>
+              </div>
+              <div class="form-group">
+                <b><i class="fa fa-phone"></i> Contact No:</b>
+                <div class="input-group">
+                  <span class="input-group-addon">+91</span>
+                  <input id="TxtContactNo" type="text" maxlength="10" placeholder="Enter contact no. here.." class="form-control" />
+                </div>
+                <small id="TxtContactNoValidate" class="text-danger"></small>
+              </div>
+              <div class="form-group">
+                <b>Gender:</b>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-female"></i> | <i class="fa fa-male"></i></span>
+                  <select class="form-control" id="DDL_Gender">
+                    <option value="F">Female</option>
+                    <option value="M">Male</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <b>Email Id:</b>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input id="TxtEmailId" type="text" maxlength="50" placeholder="Enter email id here.." class="form-control" />
+                </div>
+                <small id="TxtEmailIdValidate" class="text-danger"></small>
+              </div>
+              <div class="form-group">
+                <b>Password:</b>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                  <input id="TxtPassword" type="password" maxlength="12" placeholder="Enter password here.." class="form-control" />
+                </div>
+                <small id="TxtPasswordValidate" class="text-danger"></small>
+              </div>
+              <div class="form-group">
+                <a id="BtnCreateNewAccount" class="btn btn-primary"><i class="fa fa-user-plus" style="color:#ffffff;"></i> Create New Account</a>
+              </div>
+            </div>
+          <!-- </div>
+        </div>	
+         -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <div>
+          <div class="row justify-content-center" id="gallery">
+            <div class="col-4">
+              <img class="images" id="img1" src="img1.jpg">
+            </div>
+            <div class="col-4">
+              <img class="images" id="img1" src="img2.jpg">
+            </div>
+            <div class="col-4">
+              <img class="images" id="img1" src="img3.jpg">
+            </div>
+            <div class="paragraph">
+            <h3>The Silver Oak University is a premier university of the country with a venerable legacy from Silver Oak Group of Institutes with acclaim for highest academic standards, diverse educational programmes, distinguished faculty, illustrious alumni, varied cocurricular activities and modern infrastructure.
+
+Over eleven years of its existence as Silver Oak Group of Institutes, the group has sustained the highest global standards and best practices in education. Its long-term commitment to nation building and unflinching adherence to universal human values are reflected in its motto: “Gyanam Param Bhushanam” and “Education to Innovation”.
+
+Established in 2009 as an affiliated college today State government has accorded it with the status of a State Private University (under Gujarat Private Universities Act, 2009). A strong commitment to excellence in teaching, research and social outreach has made the University a role-model and trend setter for other Institutes and Universities. Beginning with 240 students, it has grown as one of the largest engineering campuses with more than 7000 students just in span of a little more than a decade.</h3>
+            </div>
+            <div class="col-4">
+              <img class="images" id="img1" src="img4.jpg">
+            </div>
+            <div class="col-4">
+              <img class="images" id="img1" src="img5.jpg">
+            </div>
+            <div class="col-4">
+              <img class="images" id="img1" src="img6.jpg">
+            </div>
+        <div class="support">
+           <a href="http://caniuse.com/#search=object-fit"></a><br>
+           <a href="https://github.com/jonathantneal/fitie"></a>
+        </div>
+      </section>
+</header>
+</body>
+</html>
